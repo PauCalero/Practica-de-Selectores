@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joder</title>
+    <link href="cosadefebrero.css">
+    <style>
+        p#destacado{
+    border:solid black 1px;
+}
+        p.destacado{
+    border:solid black 1px;
+}
+        p.destacado, span#id1{
+    border:solid black 1px;
+}
+        p.destacado > li.elemento_enumeracion{
+    border:solid black 1px;
+}
+        p.destacado > .elemento_enumeracion{
+    border:solid black 1px;
+}
+        .destacado > #id2{
+    border:solid black 1px;
+}
+    </style>
+</head>
+<body>
+<p>
+    Párrafo sin class ni ide
+</p>
+<p class="cita" id="destacado">
+    Párrafo con el class 'cita' y el id 'p_destacado'
+</p>
+<p class="p_destacado">
+    Párrafo con el classdestacado que nocontiene nada
+</p>
+<p class="p_destacado">
+    Párrafo con el class destacado.
+    <span id="id1">
+        Este texto va dentro deun span con elid id1
+    </span>
+</p>
+<p class="destacado">
+    <ol>
+        <li class="elemento_numeracion">
+            Esto es un li
+        </li>
+        <li class="elemento_numeracion">
+            Esto es otro li
+        </li>
+    </ol>
+</p>
+<p class="destacado">
+    Este párrafo tiene el classdestacado y en él enumeramoscosas como
+    <span class="elemento_numeracion">
+        A
+    </span>,
+    <span class="elemento_numeracion">
+        B
+    </span>
+    o también
+    <span class="elemento_numeracion">
+        C
+    </span>
+</p>
+<div class="destacado">
+    Aquí hay un
+    <span id="id2">
+        span con el id id1
+    </span>
+</div>   
+</body>
+</html>
